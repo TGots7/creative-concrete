@@ -1,0 +1,81 @@
+<h1 class="faqsheadline">CONTACT US</h1>
+<h5 class="aboutusheadline2"><i class="fa fa-quote-left" aria-hidden="true"></i>Our Customer Service is better then the rest<i class="fa fa-quote-right" aria-hidden="true"></i></h5>
+<div class="container-fluid bgcontainer">
+	<div class="row justify-content-center lowermargin">
+		<div class="col-sm-8">
+			<div class="col-sm-12 contactus">
+
+				<p style="text-align:center">If you are interested in more information about Creative Concrete Inc., and a FREE ESTIMATE<br>
+				Please fill out the form below and press submit. We will contact you as soon as possible.</p>
+
+				<h5> YOUR INFO </h5>
+				<div class="row form">
+
+					<div class="col-md-4">
+						<%= form_tag("/contactform", method: "get") do %>
+						    <%= label_tag(:firstname, "First Name:") %><br>
+						    <%= text_field_tag(:firstname) %><br>
+						    <%= label_tag(:lastnamename, "Last Name:") %><br>
+						    <%= text_field_tag(:lastname) %><br>
+						    <%= label_tag(:phone, "Phone:") %><br>
+						    <%= telephone_field(:user, :phone) %><br>
+						    <%= label_tag(:email, "Email:") %><br>
+						    <%= text_field(:user, :email) %><br>
+					</div>
+					<div class="col-md-4">
+							
+						    <%= label_tag(:email, "Address:") %><br>
+						    <%= text_field(:user, :address) %><br>
+						    <%= label_tag(:email, "City:") %><br>
+						    <%= text_field(:user, :city) %><br>
+						    <%= label_tag(:email, "State:") %><br>
+						    <%= text_field(:user, :state) %><br>
+					</div>
+					<div class="col-md-4">
+						    <%= radio_button_tag(:age, "child") %>
+							<%= label_tag(:age_child, "Pools") %><br>
+							<%= radio_button_tag(:age, "child") %>
+							<%= label_tag(:age_child, "Porches") %><br>
+							<%= radio_button_tag(:age, "child") %>
+							<%= label_tag(:age_child, "Driveways") %><br>
+							<%= radio_button_tag(:age, "child") %>
+							<%= label_tag(:age_child, "Basement") %><br>
+							<%= radio_button_tag(:age, "child") %>
+							<%= label_tag(:age_child, "Foundations") %><br>
+							<%= radio_button_tag(:age, "child") %>
+							<%= label_tag(:age_child, "Patio") %><br>
+							<%= radio_button_tag(:age, "child") %>
+							<%= label_tag(:age_child, "General Info") %><br>
+					</div>
+					<div class="col-sm-12" style="text-align:center;">
+							
+							<%= label_tag(:age_child, "Comment:") %><br>
+							<%= text_area_tag(:message, "Hi, can not wait for Creative Concrete to build me my dream outdoor space", size: "45vw") %>
+					</div>
+					<div class="col-sm-12" style="text-align:center;">
+						    <%= submit_tag("Submit") %>
+						  <% end %>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-sm-4">
+			<div class="col-sm-12 sidebar">
+				<h4>CONTACT INFO</h4>
+				<h6>Address:</h6>
+				<p>Creative Concrete Inc.<br>
+				801 North Davis Road<br>
+				Elma, New York 14059<br></p>
+
+				<h6>Phone:</h6>
+				<p>716.652.1110</p><br>
+				<h6>Fax:</h6>
+				<p>716.652.1113</p>
+
+			</div>
+		</div>
+	</div>
+
+</div>

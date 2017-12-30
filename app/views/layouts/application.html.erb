@@ -2,13 +2,90 @@
 <html>
   <head>
     <title>Creative Concrete Western New York</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
-
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <%= stylesheet_link_tag    'application', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %>
+    <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Anton|Fjalla+One' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+<!-- Navigation -->
+    <nav class="my-navbar navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img class="sign" src="<%= asset_path('cclogo.png') %>" alt="CC" height="100" width="310"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about" title="aboutus">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" title="Projects">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/stamps" title="Concrete Materials ">STAMPS & COLORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/testimonials" title="Testimonial">TESTIMONIALS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/faqs" title="FAQS">FAQS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact" title="Contact">CONTACT US</a>
+            </li>
+            <li class="nav-item phonenumber">
+              &nbsp;&nbsp;<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;(716)-652-1110
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <%= yield %>
+
+    <div class="container-fluid footer">
+    <div class="row footerrow">
+      <div class="col-sm-3 footercolumn">
+          <h4>CONTACT INFO</h4>
+          <h6>Address:</h6>
+          <p>Creative Concrete Inc.<br>
+          801 North Davis Road<br>
+          Elma, New York 14059<br></p>
+
+          <h6>Phone:</h6>
+          <p>716.652.1110</p>
+          
+      </div>
+      <div class="col-sm-3 footercolumn">
+          <p class="freefooter"><i class="fa fa-quote-left" aria-hidden="true"></i>We serve up the best customer service, combined with the best results in Western New York<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+          <div class="sidefreeestimate">
+          <a href="/contact" class="nomargin">FREE ESTIMATE</a>
+        </div>
+      </div>
+      <div class="col-sm-3 footercolumn">
+        <h4>SOCIAL MEDIA</h4><br>    
+          <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> &nbsp; FACEBOOK<br></a>
+          <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i> &nbsp; TWITTER<br></a>
+          <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> &nbsp; INSTAGRAM<br></a>
+      </div>
+      <div class="col-sm-3 footercolumn">
+        <h4>OUR AFFILIATES</h4>
+        <a href="http://www.colleys.com/"><img src="<%= asset_path('logo-colleys.png') %>" width="30%"></a><br>
+        <a href="https://www.nesl.com/"><img src="<%= asset_path('logo-redi-mix.png') %>" width="30%"></a>
+      </div>
+    </div>
+    </div>
+    <script>
+       $(".d").click(function(){ 
+          $(".d1").toggle();
+        });
+    </script>
   </body>
 </html>

@@ -1,0 +1,578 @@
+html {
+	width: 100%;
+  	height: 100%;
+  	background: image-url('images/backgroundconcrete.jpg') repeat center center;
+    background-size: cover;
+}
+
+body {
+	background: transparent;
+}
+/* NAVBAR */
+.my-navbar {
+	background-color: transparent!important;
+	color: white!important;
+	height: 40px;
+	margin-top: 8px;
+}
+a.nav-link {
+	border-radius: 3px;
+	color: white!important;
+	text-shadow: 1px 1px 1px #888888;
+	margin: 3px;
+	padding: 0px;
+	/*font-family: 'Anton', sans-serif;*/
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bolder;
+	letter-spacing: 0px;
+}
+.nav-link:hover {
+	border-bottom: solid 1px white;
+}
+.navbar-brand {
+	margin-top: 50px;
+}
+.navbar-toggler-icon {
+    background-color: white;
+    padding: 2px;
+    border: solid 1px white;
+    border-radius:4px;
+}
+.phonenumber {
+	font-size: 1.5vw;
+	font-family: 'Anton', sans-serif;
+	text-shadow: 2px 2px 2px #000000;;
+}
+/* TITLES */
+.title {
+	margin-top: 0px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	height: 500px;
+}
+.cc-title {
+	text-align: center;
+	color: white;
+	font-size: 9vw;
+}
+.title-image {
+	border-top: solid 10px white;
+	border-bottom: solid 10px white;
+	margin-top: 50px;
+	padding: 0px;
+	width: 100%;
+  	height: 400px;
+  	background: image-url('images/backgroundone.jpg') no-repeat center center;
+    background-size: cover;
+    align-items: center;
+}
+.title-image h1 {
+	/*text-align: center;*/
+	align-items: center;
+	color: black;
+	font-size: 9vw;
+}
+/* INFO */
+.info {
+	background-color: lightblue;
+	height: 0px;
+}
+
+/*SLIDER*/
+ .title-image img {
+ 	width: 100%;
+ 	height: 380px;
+ 	overflow: hidden;
+ }
+ .carousel-control-prev, .carousel-control-next {
+ 	width: 7%;
+ }
+ .free-estimate {
+ 	color: white!important;
+ 	position: absolute;
+ 	top: 75%;
+ 	left: 7%;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+ 	padding-left: 35px;
+ 	padding-right: 25px;
+ 	border-bottom: solid 2px black;
+ 	border-radius: 5px;
+  	background-color: #0000e6;
+ 	cursor: pointer;
+ 	box-shadow: 2px 5px 4px #888888;
+ 	font-family: 'Fjalla One', sans-serif;
+ 	font-size: 1.8vw;
+ 	z-index: 9;
+ 	/*transform: translae(-50%, -50%);*/
+ }
+ .free-estimate:hover {
+ 	background-color: rgba(0,0,255,0.7);
+ }
+ .free-estimate a {
+ 	color: white;
+ 	text-shadow: 1px 1px 1px #888888;
+ 	font-weight: 900;
+ 	text-decoration: none;
+ }
+ .free-estimate a:hover {
+ 	/*border: solid 2px white;*/
+ }
+
+/* ------ */ 
+/* Lower main page */
+.featured-projects {
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 2px 5px 4px #888888;
+	margin-top: 30px;
+	height: auto;
+	color: black;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 20px;
+	font-family: 'Anton', sans-serif;
+	margin-bottom: 20px;
+	/*border: solid 3px white;*/
+}
+.featured-projects h3 a{
+	color: black;
+	font-family: 'Anton', sans-serif;
+	text-shadow: 2px 2px 2px #888888;
+
+}
+.welcome {
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 2px 5px 4px #888888;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	height: auto;
+	color: #323232;
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+	padding: 10px;
+}
+.welcome h3 a {
+	color: black;
+	text-shadow: 2px 2px 2px #888888;
+	font-family: 'Anton', sans-serif;	
+}
+.welcome ul {
+	text-align: left;
+	margin-left:15%;
+}
+.questionmark {
+	color: #323232;
+	text-shadow: 3px 3px 3px #888888;
+}
+.testimonialbutton {
+	background-color: #0000e6;
+	border-bottom: solid 2px black;
+	border-radius: 5px;
+	color: white;
+	padding: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	box-shadow: 2px 2px 2px #888888;
+	margin-bottom: 10px;
+}
+.testimonialbutton:hover {
+	background-color: rgba(0,0,179,0.9);
+}
+.testimonialbutton a {
+	color: white;
+	text-shadow: 1px 1px 1px #888888;
+	text-decoration: none;
+}
+/* LANDING PAGE SLIDER OUR WORK */
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev {
+	left: 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 8px 8px;
+  color: white;
+}
+.caption-container p {
+  margin: 0px;
+  font-family: 'Fjalla One', sans-serif;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+.demo-row {
+	margin-right: 0px;
+	margin-left: 0px;
+	
+}
+.demo-conatiner {
+	padding-right: 0px;
+	padding-left: 0px;
+	
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* ABOUT US*/
+.aboutusheadline {
+	margin-top: 80px;
+	margin-bottom: 0px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px #000000;
+	font-family: 'Anton', sans-serif;
+	box-shadow: solid 2px rgba(0,0,0,0.3);
+}
+.aboutusheadline2 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px #000000;
+	font-family: 'Anton', sans-serif;
+	box-shadow: solid 2px rgba(0,0,0,0.3);
+}
+.aboutusbo {
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 2px 2px 2px #888888;
+	height: auto;
+	font-family: 'Fjalla One', sans-serif;
+}
+.aboutusbo h4 {
+	font-family: 'Anton', sans-serif;
+}
+.bopicture {
+	/*border: solid 3px white;*/
+	margin-top: 20%;
+}
+.bowriteup {
+	margin-top: 2%;
+}
+.aboutusnick {
+	margin-top:15px;
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 2px 2px 2px #888888;
+	height: auto;
+	font-family: 'Fjalla One', sans-serif;
+	margin-bottom:20px;
+}
+.nickwriteup {
+	margin-top: 2%;
+}
+.nickpicture {
+	
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+.aboutusnick h4 {
+	font-family: 'Anton', sans-serif;
+}
+.sidebar {
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 2px 2px 2px #888888;
+	height: auto;
+	padding: 20px;
+	margin-top: 0px;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.sidebar h4{
+	text-align: center;
+	text-shadow: 1px 1px 1px #888888;
+	font-family: 'Anton', sans-serif;
+}
+.sidebar h6{
+	padding-left: 10px;
+	color: #7f7f7f;
+	font-family: 'Anton', sans-serif;
+}
+.sidebar p {
+	padding-left: 20px;
+}
+.sidefreeestimate {
+	color: white!important;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+ 	padding-left: 35px;
+ 	padding-right: 25px;
+ 	border-bottom: solid 2px black;
+ 	border-radius: 5px;
+  	background-color: #0000e6;
+ 	cursor: pointer;
+ 	box-shadow: 2px 5px 4px #888888;
+ 	font-family: 'Fjalla One', sans-serif;
+ 	font-size: 1.4vw;
+ 	text-align: center;
+}
+ .sidefreeestimate:hover {
+ 	background-color: rgba(0,0,255,0.7);
+ }
+ .sidefreeestimate a {
+ 	color: white;
+ 	text-shadow: 1px 1px 1px #888888;
+ 	font-weight: 900;
+ 	text-decoration: none;
+ }
+/* FAQS */
+.faqsheadline {
+	margin-top: 70px;
+	margin-bottom: 0px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px #000000;
+	font-family: 'Anton', sans-serif;
+	box-shadow: solid 2px rgba(0,0,0,0.3);
+}
+.faqsbg {
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 2px 2px 2px #888888;
+	height: auto;
+	padding: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-family: 'Fjalla One', sans-serif;
+}
+.faqsbg h4{
+	text-align: center;
+	text-shadow: 2px 2px 2px #888888;
+	font-family: 'Anton', sans-serif;
+}
+.faqsbg h6{
+	font-family: 'Anton', sans-serif;
+}
+.faqsbg p{
+	font-size: 0.8em;
+}
+/* CONTACT */
+.contactus {
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 2px 2px 2px #888888;
+	height: auto;
+	padding: 20px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-family: 'Fjalla One', sans-serif;
+}
+.contactus h5 {
+	text-align: center;
+	text-shadow: 1px 1px 1px #888888;
+	font-family: 'Anton', sans-serif;
+}
+.bgcontainer {
+	border-top: solid 10px white;
+	border-bottom: solid 10px white;
+	margin-top: 0px;
+	width: 100%;
+  	height: 100%;
+  	background: image-url('backyard2.jpg') no-repeat center center;
+    background-size: cover;
+}
+.layer {
+	background-color: rgba(50, 50, 50, 0.7);
+    width: 100%;
+    height: 100%;
+}
+.lowermargin {
+	margin-top: 15px;
+}
+.form {
+	font-size:1em;
+}
+/* TESTIMONIALS */
+.bgtestimonial {
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 2px 2px 2px #888888;
+	height: auto;
+	padding: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Fjalla One', sans-serif;
+}
+.bgtestimonial p {
+	font-size: 0.8em;
+}
+.testimonialheadline {
+	margin-top: 80px;
+	margin-bottom: 0px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px #000000;
+	font-family: 'Anton', sans-serif;
+	box-shadow: solid 2px rgba(0,0,0,0.3);
+}
+.testimonialheadline2 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px #000000;
+	font-family: 'Anton', sans-serif;
+	box-shadow: solid 2px rgba(0,0,0,0.3);
+}
+.testimonialrow {
+	margin-bottom: 15px;
+	border-bottom: dashed 2px black;
+}
+.testimonialcolumn {
+	border-right: dashed 2px black;
+}
+/* DESCRIPTION1 */
+.description1,.description2,.description3,.description4,.description5,
+.description6,.description7,.description8,.description9,.description10,
+.description11,.description12 {
+	display:none;
+}
+.descriptionlink1:hover{
+	cursor: pointer;
+}
+.d:hover {
+	cursor:pointer;
+}
+.descriptionlink{
+	color:black;
+}
+/* FOOTER */
+.footer {
+	border-top: solid 5px white;
+	margin-top: 0px;
+	background-color: rgba(0,0,0,0.7);
+	height: auto;
+	color: white;
+	bottom:0px;
+	text-shadow: 1px 1px 1px #888888;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 0.9em;
+}
+.footer h4 {
+	text-align: center;
+}
+.footer p {
+	margin-left: 10px;
+}
+.footer a {
+	margin-left: 30%;
+	color: white;
+	text-decoration: none;
+}
+.footerrow {
+	padding: 20px;
+}
+.footercolumn {
+	border-right: dashed 2px white;
+}
+.freefooter {
+	text-align:center; 
+	padding-top:10%;
+}
+.nomargin {
+	margin-left:0px!important;
+}
+@media (max-width: 576px) {
+	.footercolumn {
+		padding: 20px;
+		border-right: none;
+		border-bottom: dashed 2px white;
+	}
+	.footerrow {
+		padding: 0px;
+	}
+	.sidefreeestimate {
+		font-size: 4vw;
+	}
+	.free-estimate {
+		font-size: 3.8vw;
+	}
+	.footercolumn p {
+		padding-top:0px;
+	}
+}
+@media (max-width: 767px) {
+	.nickpicture {
+		width: 50%;
+		margin: 10px;
+		margin-left:25%;
+	}
+	.bopicture {
+		width: 50%;
+		margin: 10px;
+		margin-left:25%;
+	}
+	.sign {
+		margin-top:-35px;
+		width:150px;
+		height:70px;
+	}
+}
