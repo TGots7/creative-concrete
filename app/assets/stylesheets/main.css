@@ -490,15 +490,16 @@ a.nav-link {
 	border-right: dashed 2px black;
 }
 /* DESCRIPTION1 */
-.description1,.description2,.description3,.description4,.description5,
-.description6,.description7,.description8,.description9,.description10,
-.description11,.description12 {
+.d01,.d02,.d03,.d04,.d05,
+.d06,.d07,.d08,.d09,.d010,
+.d011,.d012 {
 	display:none;
 }
 .descriptionlink1:hover{
 	cursor: pointer;
 }
-.d:hover {
+.d1:hover,.d2:hover,.d3:hover,.d4:hover,.d5:hover,.d6:hover,
+.d7:hover,.d8:hover,.d9:hover,.d10:hover,.d11:hover,.d12:hover{
 	cursor:pointer;
 }
 .descriptionlink{
